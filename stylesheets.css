@@ -1,0 +1,49 @@
+body {
+    background-color: silver;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+#level {
+    display: flex;
+    justify-content: center;
+}
+
+input[name="normal"] {
+    font-size: 25px;
+    padding: 15px 20px;
+    margin: 5px;
+}
+
+input[name="medium"] {
+    font-size: 25px;
+    padding: 15px 20px;
+    margin: 5px;
+}
+
+input[name="advance"] {
+    font-size: 25px;
+    padding: 15px 20px;
+    /* space in between buttons */
+    margin: 5px;
+}
+

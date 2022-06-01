@@ -1,0 +1,52 @@
+/* style sheets for secondpggame.html*/
+body {
+    background-color: silver;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: #2b2d2f;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: #2b2d2f;
+}
+.selections {
+    display: flex;
+    justify-content: center;
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 100px;
+    /* slows down sizing */
+    transition: 150ms;
+    margin: 2%;
+}
+
+.selection:hover {
+    /* grows bigger when mouse hovers on image */
+    transform: scale(1.2);
+}
+
+#score {
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+    color: #2b2d2f;
+}
+
+span{
+    font-size: 30px;
+    display: flex;
+    justify-content: right;
+    margin: 1%;
+    color: #2b2d2f;
+}
