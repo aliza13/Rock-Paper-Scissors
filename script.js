@@ -1,6 +1,7 @@
 // js code 
 
 var cChoice = ""
+var userSelection = ""
 var handSignals = ["rock", "paper", "scissors"];
 
 function randomChoice() {
@@ -9,27 +10,7 @@ function randomChoice() {
     cChoice = handSignals[cChoice];
     //console.log(cChoice)
     return cChoice;
-    // returns rock, paper, or scissors... as strings I think
 }
-
-
-    var rock = document.getElementById("rock").value;
-    var paper = document.getElementById("paper").value;
-    var scissors = document.getElementById("scissors").value;
-
-    // how do I get the random choice to show up in this?
-    var selected = randomChoice();
-
-    if (selected === rock) {
-        alert("rock")
-    }
-    else if (selected === paper) {
-         alert("p")
-    }
-    else if (selected === scissors) {
-        alert("s")
-    }
-
 
 function userChoice(userSelection) {
     var rock = document.getElementById("rock").value;
