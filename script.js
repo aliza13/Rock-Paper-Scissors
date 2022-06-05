@@ -10,21 +10,16 @@ var paper = "paper";
 var scissors = "scissors";
 
 function compareHands(userSelection, cChoice) {
-    if (cChoice === rock && userSelection === rock || cChoice === paper && userSelection === paper || cChoice === scissors && userSelection === scissors) {
-        return result = "tie"
+    alert("computer choice is " + cChoice);
+    if (cChoice == rock && userSelection == rock || cChoice == paper && userSelection == paper || cChoice == scissors && userSelection == scissors) {
+        alert("tie");
     }
-    else if(cChoice === paper && userSelection === rock || cChoice === scissors && userSelection === paper || cChoice === rock && userSelection === scissors) {
-        return result = "Computer Wins"
+    else if(cChoice == paper && userSelection == rock || cChoice == scissors && userSelection == paper || cChoice == rock && userSelection == scissors) {
+        alert("Computer Wins");
     }
-    else if(cChoice === paper && userSelection === scissors || cChoice === scissors && userSelection === rock || cChoice === rock && userSelection === paper) {
-        return result = "User Wins"
+    else if(cChoice == paper && userSelection == scissors || cChoice == scissors && userSelection == rock || cChoice == rock && userSelection == paper) {
+        alert("User Wins");
     }
-    console.log(result);  // does not work
-}
-
-function userChoice(userSelection) {
-    // ???
-    return compareHands(userSelection, randomChoice());
 }
 
 
@@ -34,5 +29,3 @@ function randomChoice() {
     cChoice = handSignals[cChoice];
     return cChoice;
 }
-
-alert(result)  // does not work
