@@ -2,7 +2,8 @@
 
 var cChoice;
 var userSelection;
-var result;
+var userScore = 0;
+var compScore = 0;
 var handSignals = ["rock", "paper", "scissors"];
 
 var rock = "rock";
@@ -15,13 +16,17 @@ function compareHands(userSelection, cChoice) {
         alert("tie");
     }
     else if(cChoice == paper && userSelection == rock || cChoice == scissors && userSelection == paper || cChoice == rock && userSelection == scissors) {
+        compScore = ++compScore;
+        // updates span element for score by replacing it with the new score
+        document.getElementById("compScore").textContent=compScore;
         alert("Computer Wins");
     }
     else if(cChoice == paper && userSelection == scissors || cChoice == scissors && userSelection == rock || cChoice == rock && userSelection == paper) {
+        userScore = ++userScore;
+        document.getElementById("userScore").textContent=userScore;
         alert("User Wins");
     }
 }
-
 
 function randomChoice() {
     // grabs random # that = a hand signal
@@ -29,3 +34,7 @@ function randomChoice() {
     cChoice = handSignals[cChoice];
     return cChoice;
 }
+
+
+
+
