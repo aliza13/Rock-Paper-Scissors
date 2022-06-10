@@ -5,17 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advance Rock Paper Scissors</title>
+    <link rel="stylesheet" href="secondss.css">
 </head>
 <body>
+    <script src="advanceLevel.js"> </script> 
+    <div class="text"> 
+        <h1>Advanced Rock Paper Scissors</h1>
+    </div>
+
+    <div><h2>Select a hand signal</h2></div>
+
     <div class="selections">
-        <button class="selection">🫶</button>
-        <button class="selection">👎</button>
-        <button class="selection">🤜</button>
-        <button class="selection">👌</button>
-        <button class="selection">🤟</button>
-        <button class="selection">👉</button>
-        <button class="selection">🫱</button>
-        <button class="selection">✌🏽</button>
+        <button id="rock" class="selection" value="rock" title="rock" onclick="compareHands('rock',randomChoice());">🤜</button>
+        <button id="paper" class="selection" value="paper" title="paper" onclick="compareHands('paper',randomChoice());">🫱</button>
+        <button id="scissors" class="selection" value="scissors" title="scissors" onclick="compareHands('scissors',randomChoice());">✌🏽</button>
+        <button id="air" class="selection" value="air" title="air" onclick="compareHands('air',randomChoice());">👌</button>
+        <button id="gun" class="selection" value="gun" title="gun" onclick="compareHands('gun',randomChoice());">👉</button>
+        <button id="love" class="selection" value="love" title="love" onclick="compareHands('love',randomChoice());">🫶</button>
+        <button id="tree" class="selection" value="tree" title="tree" onclick="compareHands('tree',randomChoice());">👎</button>
+        <button id="devil" class="selection" value="devil" title="devil" onclick="compareHands('devil',randomChoice());">🤟</button>
+    </div> 
+
+    <div id="score">
+        YOU: <span id="userScore" class="scores">0</span>
+        Computer: <span id="compScore" class="scores">0</span>
     </div>
 </body>
 </html>
